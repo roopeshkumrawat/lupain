@@ -1,0 +1,111 @@
+.fixedTopbar {
+    height: 66px;
+    align-items: center;
+    padding: 0px 30px;
+    position: fixed;
+    top: 0;
+    background-color: #0B4077;
+}
+
+.gotItBtn {
+    max-width: 120px;
+    width: 100%;
+    padding: 8px 15px;
+    color: #0b4077;
+    background-color: #fdc20a;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flagImg {
+    height: 22px;
+}
+
+.navbarInner {
+    background-color: #0046A8;
+    margin-top: 84px;
+    padding-top: 18px;
+}
+
+.logoCallBtns {
+    padding: 10px 0px;
+}
+
+.tel {
+    display: block;
+    color: #fff;
+    text-align: right;
+    font-size: 1.1em;
+    line-height: 2.2em;
+    text-transform: uppercase;
+    /* margin-top: 13px; */
+    text-decoration: none;
+}
+
+.userButtons a {
+    height: 50px;
+    width: 50px;
+    object-fit: contain;
+    background-color: #fff;
+    color: #0b4077;
+
+}
+
+.currencyLogoButtons a,
+.currencyLogoButtonsList a {
+    height: 50px;
+    width: 50px;
+    object-fit: contain;
+    background-color: #fff;
+    color: #0b4077;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.currencyLogoButtons a:hover,
+.currencyLogoButtonsList a:hover {
+    background-color: #0b4077;
+    color: #fff;
+}
+
+.currencyLogoButtonsList {
+    max-width: 50px;
+    width: 50px;
+    min-width: 50px;
+    padding: 0px;
+    border: none;
+    margin-top: -2px !important;
+}
+
+.logoButtonsToggle::after {
+    display: none;
+}
+
+.sellingButtons a {
+    background: #fdc20a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    height: 50px;
+    text-align: center;
+    line-height: 1;
+    padding: 0px 20px;
+}
+
+@media (max-width: 767px) {
+    .fixedTopbar {
+        padding: 0px 10px;
+    }
+
+    .message {
+        font-size: 15px;
+        text-align: center;
+        line-height: 15px;
+    }
+}
