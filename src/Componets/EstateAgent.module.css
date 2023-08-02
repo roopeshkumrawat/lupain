@@ -1,0 +1,29 @@
+.mainHeading {
+    font-size: 2.1em;
+    margin-bottom: 27px;
+    line-height: 1.2em;
+    color: #0d5397;
+}
+
+.secondaryHeading {
+    color: #0d5397;
+    margin-bottom: 25px;
+    font-size: 1.9em;
+    border-bottom: 1px solid #c0c0c0;
+    padding-bottom: 20px;
+}
+
+.propertiesLocationName{
+	text-align: center;
+	color: #fff;
+	background: rgba(13,83,151,0.75);
+	padding: 10px;
+	text-transform: capitalize;
+	margin-bottom: 0;
+	font-size: 1.1em;
+	font-weight: 700;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	z-index: 9;
+}
