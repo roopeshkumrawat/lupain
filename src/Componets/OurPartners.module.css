@@ -1,0 +1,9 @@
+.mainHeading{
+    border-bottom: 1px solid #c0c0c0;
+    padding-bottom: 20px;
+    text-align: center;
+    color: #0d5397;
+    /* font-weight: 600; */
+    margin-bottom: 25px;
+    /* font-family: 'Avenir'; */
+}
