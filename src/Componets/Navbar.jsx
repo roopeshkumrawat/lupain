@@ -53,7 +53,7 @@ function Navbar() {
                                     </button>
                                 </div>
                                 <div className="col-lg-4 d-flex justify-content-lg-end justify-content-center align-items-center">
-                                    <Link className={styles.tel} href="tel:+34 922 796 527">Bel vandaag +34 922 796 527</Link>
+                                    <Link className={styles.tel} to="tel:+34 922 796 527">Call Today +34 922 796 527</Link>
                                 </div>
                                 <div className="col-lg-4 d-flex justify-content-lg-end justify-content-center align-items-center gap-2">
                                     <div className={`${styles.userButtons}`}>
@@ -85,68 +85,68 @@ function Navbar() {
                                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                                     <ul className="navbar-nav mb-2 mb-lg-0  d-flex justify-content-between w-100">
                                         <li className="nav-item">
-                                            <Link className="nav-link active" aria-current="page" href="#">HOME</Link>
+                                            <Link className="nav-link active" aria-current="page" to="/">HOME</Link>
                                         </li>
                                         <li className="nav-item dropdown">
-                                            <Link className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <Link className="nav-link dropdown-toggle" to="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                                 TERMERIFE PROPERTIES
                                             </Link>
                                             <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                <li><Link className="dropdown-item" href="#">Action</Link></li>
-                                                <li><Link className="dropdown-item" href="#">Another action</Link></li>
+                                                <li><Link className="dropdown-item" to="/">Action</Link></li>
+                                                <li><Link className="dropdown-item" to="/">Another action</Link></li>
                                                 <li><hr className="dropdown-divider" /></li>
-                                                <li><Link className="dropdown-item" href="#">Something else here</Link></li>
+                                                <li><Link className="dropdown-item" to="/">Something else here</Link></li>
                                             </ul>
                                         </li>
                                         <li className="nav-item dropdown">
-                                            <Link className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <Link className="nav-link dropdown-toggle" to="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                                 SELLING
                                             </Link>
                                             <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                <li><Link className="dropdown-item" href="#">Action</Link></li>
+                                                <li><Link className="dropdown-item" to="/">Action</Link></li>
                                             </ul>
                                         </li>
                                         <li className="nav-item">
-                                            <Link className="nav-link" href="#">RENTALS</Link>
+                                            <Link className="nav-link" to="/">RENTALS</Link>
                                         </li>
                                         <li className="nav-item dropdown">
-                                            <Link className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <Link className="nav-link dropdown-toggle" to="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                                 ABOUT US
                                             </Link>
                                             <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                <li><Link className="dropdown-item" href="#">Action</Link></li>
-                                                <li><Link className="dropdown-item" href="#">Another action</Link></li>
+                                                <li><Link className="dropdown-item" to="/">Action</Link></li>
+                                                <li><Link className="dropdown-item" to="/">Another action</Link></li>
                                                 <li><hr className="dropdown-divider" /></li>
-                                                <li><Link className="dropdown-item" href="#">Something else here</Link></li>
+                                                <li><Link className="dropdown-item" to="/">Something else here</Link></li>
                                             </ul>
                                         </li>
                                         <li className="nav-item dropdown">
-                                            <Link className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <Link className="nav-link dropdown-toggle" to="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                                 INFORMATION
                                             </Link>
                                             <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                <li><Link className="dropdown-item" href="#">Action</Link></li>
-                                                <li><Link className="dropdown-item" href="#">Another action</Link></li>
+                                                <li><Link className="dropdown-item" to="/">Action</Link></li>
+                                                <li><Link className="dropdown-item" to="/">Another action</Link></li>
                                                 <li><hr className="dropdown-divider" /></li>
-                                                <li><Link className="dropdown-item" href="#">Something else here</Link></li>
+                                                <li><Link className="dropdown-item" to="/">Something else here</Link></li>
                                             </ul>
                                         </li>
                                         <li className="nav-item dropdown">
-                                            <Link className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <Link className="nav-link dropdown-toggle" to="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                                 SERVICES
                                             </Link>
                                             <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                <li><Link className="dropdown-item" href="#">Action</Link></li>
-                                                <li><Link className="dropdown-item" href="#">Another action</Link></li>
+                                                <li><Link className="dropdown-item" to="/">Action</Link></li>
+                                                <li><Link className="dropdown-item" to="/">Another action</Link></li>
                                                 <li><hr className="dropdown-divider" /></li>
-                                                <li><Link className="dropdown-item" href="#">Something else here</Link></li>
+                                                <li><Link className="dropdown-item" to="/">Something else here</Link></li>
                                             </ul>
                                         </li>
                                         <li className="nav-item">
-                                            <Link className="nav-link" aria-current="page" href="#">BLOG</Link>
+                                            <Link className="nav-link" aria-current="page" to="/">BLOG</Link>
                                         </li>
                                         <li className="nav-item">
-                                            <Link className="nav-link" aria-current="page" href="#">CONTACT</Link>
+                                            <Link className="nav-link" aria-current="page" to="/">CONTACT</Link>
                                         </li>
                                     </ul>
                                 </div>

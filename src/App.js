@@ -1,19 +1,30 @@
-import Navbar from './Componets/Navbar';
-import HerroBanner from './Componets/HerroBanner';
 import './App.css';
-import EstateAgent from './Componets/EstateAgent';
-import OurPartners from './Componets/OurPartners';
-// import {Routes,Route} from 'react-router-dom'
+import Navbar from './Componets/Navbar';
+// import HerroBanner from './Componets/HerroBanner';
+// import EstateAgent from './Componets/EstateAgent';
+// import OurPartners from './Componets/OurPartners';
+// import NewProperties from './Componets/NewProperties';
+// import WhyUseLupain from './Componets/WhyUseLupain';
+// import CustomerSay from './Componets/CustomerSay';
+import Footer from './Componets/Footer';
+import Home from './Pages/Home';
+import {Routes,Route} from 'react-router-dom'
 function App() {
   return (
     <>
       <Navbar />
-      <HerroBanner/>
+      {/* <HerroBanner />
       <EstateAgent />
-      <OurPartners/>
-      {/* <Routes>
-        <Route path='/Navbar' >
-      </Routes> */}
+      <NewProperties />
+      <WhyUseLupain />
+      <CustomerSay/>
+      <OurPartners /> */}
+      <Routes>
+        <Route index element={<Home />} />
+      </Routes>
+      <Footer />
+
+
     </>
   );
 }

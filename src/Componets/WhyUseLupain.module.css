@@ -1,0 +1,32 @@
+.whyUseMain {
+    background-image: url('../images/why.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.secondaryHeading {
+    color: #0d5397;
+    font-size: 1.9em;
+}
+
+.whyUseImg {
+    display: inline-block;
+    vertical-align: middle;
+    height: 70px;
+}
+
+.whyUseHeading {
+    padding: 10px;
+    color: #0d5397;
+    margin-bottom: 0;
+    position: relative;
+    line-height: 1.2em;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.whyUseDescription {
+    color: #0d5397;
+    font-size: .95em;
+    line-height: 1.45em
+}

@@ -1,0 +1,58 @@
+.footerMain {
+    padding: 40px 0 0 0;
+    background-color: #0d5397;
+    margin-top: 0;
+    font-size: 1em;
+    color: #fff;
+    line-height: 1.4em;
+
+}
+
+.footerMain strong {
+    color: #ffc900;
+    display: block;
+    font-size: 1.1em;
+    /* margin-bottom: 3px; */
+    font-weight: 500;
+}
+
+/* .tel,
+.email {
+    margin-bottom: 10px;
+} */
+
+.newsLetterHeadig {
+    color: #fdc20a;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    text-transform: inherit;
+}
+
+.newsLetterPara {
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: .9em;
+}
+
+.subcribeBtn {
+    background: #ffc900;
+    color: #0d5397;
+    text-transform: uppercase;
+    float: right;
+    height: 40px;
+    font-size: .95em;
+}
+
+.copyRightText {
+    font-size: .8em;
+}
+
+.bottomLinks {
+    font-size: .8em;
+    color: #ffc900;
+    text-decoration: none;
+}
+
+.footerBottom {
+    background: #1662ad;
+}
