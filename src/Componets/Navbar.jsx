@@ -5,45 +5,52 @@ import EsMin from '../images/ES-min.png';
 import FrMin from '../images/FR-min.png';
 import ItMin from '../images/IT-min.png';
 import NlMin from '../images/NL-min.png';
+import SvMin from '../images/SV-min.png';
 import Logo from '../images/logo-new.png';
 import { Link } from 'react-router-dom';
+function displayNone() {
+    document.getElementsByClassName(`${styles.fixedTopbarMain}`)[0].classList.add("d-none");
+}
 function Navbar() {
     return (
         <div className={styles.mainNavbar}>
-            <div className={`${styles.fixedTopbar} w-100`}>
-                <div className="d-flex justify-content-between align-items-center h-100">
-                    <p className={`${styles.message} text-light`}>This website uses cookies to ensure you get the best experience on our website </p>
-                    <button type="button" className={`${styles.gotItBtn} btn btn-warning ms-2`}>Got it!</button> </div>
+            <div className={`${styles.fixedTopbarMain} w-100`}>
+                <div className={`${styles.fixedTopbar} w-100`}>
+                    <div className="d-flex justify-content-between align-items-center h-100">
+                        <p className={`${styles.message} text-light`}>This website uses cookies to ensure you get the best experience on our website </p>
+                        <button type="button" onClick={displayNone} className={`${styles.gotItBtn} btn btn-warning ms-2`}>Got it!</button> </div>
+                </div>
             </div>
             <div className={styles.navbarInner}>
                 <div className={`${styles.navbarInnerChild} container-lg-fluid`}>
                     <div className="container">
                         <div className={`${styles.flagIcons} d-flex justify-content-between`}>
-                            <div className={`${styles.flag} d-flex gap-2`}>
-                                <Link to="/"><img className={`${styles.flagImg}`} src={DeMin} alt="flag" /></Link>
+                            <div className={`${styles.flag} d-flex`}>
                                 <Link to="/"><img className={`${styles.flagImg}`} src={EnMin} alt="flag" /></Link>
                                 <Link to="/"><img className={`${styles.flagImg}`} src={EsMin} alt="flag" /></Link>
+                                <Link to="/"><img className={`${styles.flagImg}`} src={DeMin} alt="flag" /></Link>
                                 <Link to="/"><img className={`${styles.flagImg}`} src={FrMin} alt="flag" /></Link>
                                 <Link to="/"><img className={`${styles.flagImg}`} src={ItMin} alt="flag" /></Link>
                                 <Link to="/"><img className={`${styles.flagImg}`} src={NlMin} alt="flag" /></Link>
+                                <Link to="/"><img className={`${styles.flagImg}`} src={SvMin} alt="flag" /></Link>
                             </div>
-                            <div className={`${styles.icons} d-flex gap-2`}>
-                                <Link to="/" className='text-light align-self-center d-flex'> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-facebook" viewBox="0 0 16 16">
-                                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
-                                </svg></Link>
-                                <Link to="/" className='text-light align-self-center d-flex'><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-twitter" viewBox="0 0 16 16">
-                                    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
-                                </svg></Link>
-                                <Link to="/" className='text-light align-self-center d-flex'><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-linkedin" viewBox="0 0 16 16">
-                                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
-                                </svg></Link>
+                            <div className={`${styles.icons} d-flex`}>
+                                <Link to="/" className={`${styles.TopBarIcons} d-flex align-self-start`}>
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512" style={{ fill: "#ffffff" }}><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" /></svg>
+                                </Link>
+                                <Link to="/" className={`${styles.TopBarIcons} d-flex align-self-start`}>
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" style={{ fill: "#ffffff" }}><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" /></svg>
+                                </Link>
+                                <Link to="/" className={`${styles.TopBarIcons} d-flex align-self-start`}>
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" style={{ fill: "#ffffff" }}><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" /></svg>
+                                </Link>
                             </div>
                         </div>
                         <div className={styles.logoCallBtns}>
                             <div className="row">
                                 <div className="col-lg-4 d-flex justify-content-between justify-content-lg-start">
                                     {/* <img src={Logo} alt="logo" /> */}
-                                    <Link to="/"><img src={Logo} alt="logo" /></Link>
+                                    <Link to="/"><img className={styles.mainLogo} src={Logo} alt="logo" /></Link>
                                     <button className={`${styles.navbarToggler} navbar-toggler d-lg-none d-block`} type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                         <span className={`${styles.navbarTogglerIcon} navbar-toggler-icon`}>
                                             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" className="bi bi-list" viewBox="0 0 16 16">
@@ -52,10 +59,10 @@ function Navbar() {
                                         </span>
                                     </button>
                                 </div>
-                                <div className="col-lg-4 d-flex justify-content-lg-end justify-content-center align-items-center">
+                                <div className="col-lg-4 d-flex justify-content-lg-end justify-content-center">
                                     <Link className={styles.tel} to="tel:+34 922 796 527">Call Today +34 922 796 527</Link>
                                 </div>
-                                <div className="col-lg-4 d-flex justify-content-lg-end justify-content-center align-items-center gap-2">
+                                <div className="col-lg-4 d-flex justify-content-lg-end justify-content-center gap-2">
                                     <div className={`${styles.userButtons}`}>
                                         <Link to="/" className='d-flex justify-content-center align-items-center'><svg xmlns="http://www.w3.org/2000/svg" width="1.4em" height="1.4em" fill="currentColor" className="bi bi-person-fill" viewBox="0 0 16 16">
                                             <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />

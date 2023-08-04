@@ -6,10 +6,9 @@ import locationImg3 from '../images/location3.jpg';
 import locationImg4 from '../images/location4.jpg';
 import locationImg5 from '../images/location5.jpg';
 import locationImg6 from '../images/location6.png';
+import SliderDiv from './SliderDiv';
 function EstateAgent() {
     return (
-
-
         <div className={`${styles.estateAgentMain}`}>
             <div className="container">
                 <h1 className={`${styles.mainHeading} text-center m-0 mt-5 mb-3`}>Lupain – Tenerife Estate Agents</h1>
@@ -17,6 +16,7 @@ function EstateAgent() {
                     <h2 className={`${styles.secondaryHeading} text-center`}>
                         Featured Tenerife Properties
                     </h2>
+                    <SliderDiv/>
                 </div>
                 <div className={`${styles.PropertiesLocationMain}`}>
                     <h2 className={`${styles.secondaryHeading} text-center`}>
@@ -69,7 +69,6 @@ function EstateAgent() {
                 </div>
             </div>
         </div>
-
     )
 }
 export default EstateAgent;

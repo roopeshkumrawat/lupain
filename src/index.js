@@ -1,3 +1,4 @@
+import './fonts/AvenirLTStd-Book.otf';
 import React, { StrictMode } from 'react';
 import ReactDOM from 'react-dom/client';
 import 'bootstrap/dist/css/bootstrap.css';
@@ -14,7 +15,7 @@ root.render(
     <BrowserRouter>
       <App />
     </BrowserRouter>
-  </StrictMode>
+   </StrictMode> 
 
 );
 

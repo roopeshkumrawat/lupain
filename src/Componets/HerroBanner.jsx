@@ -102,7 +102,7 @@ function HerroBanner() {
                                 <div className="col-lg-5 col-md-4 ">
                                     <label className="fw-bold text-warning" htmlFor="status">Status</label>
                                     <select className="form-select" id='status' aria-label="Default select example">
-                                        <option selected>Sold</option>
+                                        <option >Sold</option>
                                         <option value="1">For Sale</option>
                                         <option value="2">For Rent</option>
                                     </select>

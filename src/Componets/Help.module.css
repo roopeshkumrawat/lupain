@@ -1,0 +1,56 @@
+.helpMain {
+
+    background-image: url('../images/help.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0;
+    min-height: 370px;
+}
+
+.helpForm {
+    background: #fdc20a;
+}
+
+.helpMainHeading {
+    text-transform: capitalize;
+    font-size: 2.6em;
+    margin-bottom: 14px;
+    color: #0d5397;
+}
+
+.helpSecondaryHeading {
+    text-transform: capitalize;
+    font-size: 1.8em;
+    font-style: italic;
+    color: #0d5397;
+}
+
+.formSubmitBtn {
+    max-width: 100%;
+    padding: 0 20px;
+    height: 45px;
+    line-height: 45px;
+    background: #0d5397;
+    color: #FFF;
+    text-transform: capitalize;
+    border: 0;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-transition: background-color .2s linear;
+    transition: background-color .2s linear;
+    letter-spacing: .6px;
+}
+
+.formSubmitBtn:hover {
+    background-color: #ffc900;
+    color: #0d5397;
+}
+.helpPeopleImg{
+    max-width: 100%;
+    width: 100%;
+}
