@@ -1,5 +1,5 @@
 .sliderCaption {
-    top: 0px !important;
+    top: 30px !important;
     left: 0 !important;
     right: 0px !important;
 }
@@ -7,7 +7,7 @@
 .sliderCaption h2 {
     color: #fff;
     text-align: center;
-    /* font-weight: 700; */
+    font-weight: 600;
     font-size: 2em;
     text-shadow: 2px 2px 0 rgba(13, 83, 151, 1);
     text-transform: uppercase;
@@ -43,7 +43,7 @@
 .findDreamHeading {
     color: #fff;
     text-align: center;
-    /* font-weight: 700; */
+    font-weight: 700;
     font-size: 2em;
     text-shadow: 2px 2px 0 rgba(13, 83, 151, 1);
     text-transform: uppercase;

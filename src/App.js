@@ -9,10 +9,12 @@ import Navbar from './Componets/Navbar';
 import Footer from './Componets/Footer';
 import Home from './Pages/Home';
 import {Routes,Route} from 'react-router-dom'
+// import Header from './Componets/Header';
 function App() {
   return (
     <>
       <Navbar />
+      {/* <Header /> */}
       {/* <HerroBanner />
       <EstateAgent />
       <NewProperties />
